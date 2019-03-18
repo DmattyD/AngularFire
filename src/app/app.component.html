@@ -1,0 +1,12 @@
+<div class="top-bar">
+  <div class="top-bar-left">
+    <button routerLink="/">{{title}}</button>
+  </div>
+  <div class="top-bar-right">
+    <button class="button" *ngIf="!isAuthenticated" (click)="oktaAuth.loginRedirect()"> Login </button>
+    <button class="button" *ngIf="isAuthenticated" (click)="oktaAuth.logout()"> Logout </button>
+  </div>
+</div>
+<router-outlet></router-outlet>
+
+
