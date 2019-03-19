@@ -44,7 +44,7 @@ export class HomeComponent implements OnInit {
     this.subs = doc.subscribe((snapshot) => {
       const page = snapshot.data();
       if (!page) {
-        this.content = '### This page does not exist';
+        this.content = '### This will eventuall be a library of my items';
         this.slug = undefined;
       } else {
         this.slug = slug;

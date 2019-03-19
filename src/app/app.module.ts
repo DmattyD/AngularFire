@@ -11,6 +11,7 @@ import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { MarkdownModule } from 'ngx-markdown';
 import { EditComponent } from './edit/edit.component';
+import { DeleteComponent } from './delete/delete.component';
 
 const config = {
   issuer: 'https://dev-110678.okta.com',
@@ -30,7 +31,8 @@ const firebaseConfig = {
   declarations: [
     AppComponent,
     HomeComponent,
-    EditComponent
+    EditComponent,
+    DeleteComponent
   ],
   imports: [
     BrowserModule,

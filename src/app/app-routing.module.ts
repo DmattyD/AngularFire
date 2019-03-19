@@ -3,11 +3,14 @@ import { Routes, RouterModule } from '@angular/router';
 import { OktaCallbackComponent, OktaAuthGuard } from '@okta/okta-angular';
 import { HomeComponent } from './home/home.component';
 import { EditComponent } from './edit/edit.component';
+import { DeleteComponent} from './delete/delete.component';
 const routes: Routes = [
   {path: '', redirectTo: '/home/', pathMatch: 'full'},
   {
     path: 'home/:slug',
     component: HomeComponent
+  },
+  {path: 'delete/', component: DeleteComponent
   },
   {
     path: 'home',

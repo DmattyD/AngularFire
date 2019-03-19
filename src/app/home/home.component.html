@@ -2,6 +2,7 @@
     <div class="grid-x">
       <div class="small-12 cell">
         <div class="manage-post" *ngIf="isAuthenticated">
+          <button class="button" routerLInk="/delete">Delete</button>
           <button class="button" [routerLink]="['/edit', slug]">Edit</button>
           <button class="button" routerLink="/edit">Create</button>
         </div>

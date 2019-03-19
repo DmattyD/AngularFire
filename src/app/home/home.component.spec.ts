@@ -1,5 +1,4 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { HomeComponent } from './home.component';
 import { OktaAuthModule } from '@okta/okta-angular';
 import { RouterTestingModule } from '@angular/router/testing';
