@@ -1,3 +1,17 @@
-<p>
-  delete works!
-</p>
+<div class ="grid-container wiki">
+  <div class="grid-x">
+    <div class="small-12 cell">
+      <form [formGroup]="deletePageForm" (ngSubmit)="deletePage()">
+        <label>Slug
+          <input type="text" placeholder="Slug" formControlName="slug">
+        </label>
+        <label>
+          Table of wiki
+          <textarea placeholder="PageContent" formControlName="content"></textarea>
+        </label>
+        
+      </form>
+
+    </div>
+  </div>
+</div>

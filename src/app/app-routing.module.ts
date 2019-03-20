@@ -10,7 +10,7 @@ const routes: Routes = [
     path: 'home/:slug',
     component: HomeComponent
   },
-  {path: 'delete/', component: DeleteComponent
+  {path: 'delete', component: DeleteComponent
   },
   {
     path: 'home',
